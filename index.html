@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maria & Fernando — 24 de Octubre de 2026</title>
+<meta name="description" content="Invitación de boda de Maria y Fernando — 24 de Octubre de 2026.">
+<style>
+:root{
+  --gold:#b86b18;
+  --gold2:#d99a42;
+  --ink:#34281f;
+  --cream:#fffaf2;
+  --blush:#f5e8df;
+  --sage:#6f806b;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 18% 10%, rgba(218,166,92,.16), transparent 24rem),
+    radial-gradient(circle at 84% 35%, rgba(199,160,133,.16), transparent 28rem),
+    linear-gradient(180deg,#fffdf9,#f8efe7);
+  font-family: Georgia, "Times New Roman", serif;
+}
+.hero,.section{
+  min-height:100svh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:28px 16px;
+  position:relative;
+  overflow:hidden;
+}
+.card{
+  width:min(720px,100%);
+  background:rgba(255,253,248,.90);
+  border:1px solid rgba(184,107,24,.4);
+  box-shadow:0 22px 70px rgba(73,47,24,.12);
+  position:relative;
+  padding:58px 34px;
+  text-align:center;
+  backdrop-filter: blur(8px);
+}
+.card:before,.card:after{
+  content:"";
+  position:absolute;
+  inset:12px;
+  border:1px solid rgba(184,107,24,.55);
+  pointer-events:none;
+}
+.ornament{position:absolute;color:var(--gold);font-size:38px;line-height:1}
+.tl{top:12px;left:18px}.tr{top:12px;right:18px;transform:scaleX(-1)}
+.bl{bottom:12px;left:18px;transform:scaleY(-1)}
+.br{bottom:12px;right:18px;transform:scale(-1)}
+.flowers{
+  width:132px;height:96px;margin:0 auto 14px;position:relative;
+}
+.flower{
+  position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);
+  width:58px;height:58px;border-radius:48% 52% 46% 54%;
+  background:radial-gradient(circle at 50% 55%,#f6dfc6 0 16%,#fff 17% 42%,#ead5c4 43% 65%,transparent 66%);
+  box-shadow:-30px 10px 0 -18px #9da58a, 29px 12px 0 -18px #78866f;
+}
+.rings{position:absolute;left:50%;top:53%;transform:translate(-50%,-50%) rotate(-10deg);font-size:42px;color:#c7862f;text-shadow:0 1px #fff}
+.script{
+  font-family:"Brush Script MT","Segoe Script","Lucida Handwriting",cursive;
+  color:var(--gold);
+  font-weight:500;
+}
+.kicker{font-size:clamp(34px,7vw,58px);margin:8px 0 18px}
+.names{font-size:clamp(48px,10vw,88px);line-height:.95;margin:8px 0}
+.amp{font-size:.62em;display:block;margin:.14em}
+.sub{font-size:clamp(18px,3vw,24px);line-height:1.55}
+.small{font-size:15px;line-height:1.65}
+.datebig{font-size:clamp(34px,8vw,70px);line-height:1.05}
+.datebig strong{font-size:1.35em}
+.divider{width:72px;height:1px;background:var(--gold2);margin:22px auto}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:25px}
+.btn{
+  display:inline-block;padding:13px 19px;border-radius:999px;
+  border:1px solid var(--gold);color:#774512;text-decoration:none;
+  background:#fff9ef;font-family:Arial,sans-serif;font-size:14px;
+}
+.btn.primary{background:var(--gold);color:white}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:26px auto 0;max-width:500px}
+.box{padding:12px 5px;background:#fffaf2;border:1px solid #ead4b4}
+.num{font-size:29px;color:var(--gold);display:block}
+.lab{font:11px Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#6b5a4d}
+.story{max-width:570px;margin:auto;font-size:17px;line-height:1.75}
+.family p{margin:12px 0}
+.family .role{font:12px Arial,sans-serif;text-transform:uppercase;letter-spacing:.15em;color:#77675a}
+.family .person{font-size:20px;color:var(--gold);font-style:italic}
+.schedule{max-width:500px;margin:18px auto;text-align:left}
+.schedule-row{display:grid;grid-template-columns:90px 1fr;gap:18px;padding:13px 0;border-bottom:1px solid #eadccc}
+.time{color:var(--gold);font-weight:bold}
+.footer{padding:30px;text-align:center;color:#77675a;font-size:13px}
+.reveal{opacity:0;transform:translateY(24px);transition:.8s ease}
+.reveal.on{opacity:1;transform:none}
+@media(max-width:520px){
+ .card{padding:48px 24px}
+ .countdown{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="card reveal">
+    <span class="ornament tl">❧</span><span class="ornament tr">❧</span>
+    <span class="ornament bl">❧</span><span class="ornament br">❧</span>
+    <div class="flowers"><div class="flower"></div><div class="rings">⚭</div></div>
+    <div class="script kicker">¡Nos Casamos!</div>
+    <p class="sub"><strong>Y queremos compartir contigo<br>este día tan especial</strong></p>
+    <div class="divider"></div>
+    <a class="btn primary" href="#nombres">Abrir invitación</a>
+  </div>
+</section>
+
+<section class="section" id="nombres">
+  <div class="card reveal">
+    <span class="ornament tl">❧</span><span class="ornament tr">❧</span>
+    <span class="ornament bl">❧</span><span class="ornament br">❧</span>
+    <div class="flowers"><div class="flower"></div><div class="rings">⚭</div></div>
+    <div class="script names">Maria<span class="amp">&amp;</span>Fernando</div>
+    <div class="divider"></div>
+    <p class="story">
+      Le damos las gracias a Dios por cruzar nuestros caminos y nuestras vidas,
+      por formar una familia con hijos y por cada día continuar juntos apoyándonos.
+      El camino no ha sido fácil, pero con mucho amor hemos logrado llegar ahora
+      hacia el altar. Nuestros hijos son lo más valioso de nuestra historia,
+      con la bendición de Dios y de nuestros padres.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="card reveal family">
+    <div class="script kicker" style="font-size:42px">Con la bendición de nuestras familias</div>
+    <p><span class="role">Papás de la Novia</span><br>
+      <span class="person">Maria Aurelia Diaz O. &amp; Norberto Diaz Gomez</span></p>
+    <p><span class="role">Papás del Novio</span><br>
+      <span class="person">Maria del Carmen Herrera O. &amp; Antonio Cabrera Cruz</span></p>
+    <p><span class="role">Padrinos de Velación</span><br>
+      <span class="person">Kenia Margarita Cabrera &amp; Victor Manuel Gutierrez</span></p>
+    <p><span class="role">Padrinos de Lazo y Brindis</span><br>
+      <span class="person">Rosa Maria Diaz &amp; Julio Cesar Estrada</span></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="card reveal">
+    <div class="script datebig">El Sábado<br><strong>24</strong><br>de Octubre<br>del <strong>2026</strong></div>
+    <div class="countdown" aria-label="Cuenta regresiva">
+      <div class="box"><span class="num" id="days">--</span><span class="lab">Días</span></div>
+      <div class="box"><span class="num" id="hours">--</span><span class="lab">Horas</span></div>
+      <div class="box"><span class="num" id="mins">--</span><span class="lab">Minutos</span></div>
+      <div class="box"><span class="num" id="secs">--</span><span class="lab">Segundos</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="card reveal">
+    <div class="script kicker" style="font-size:44px">Ceremonia Religiosa</div>
+    <p class="sub">11:30 AM</p>
+    <p class="sub"><strong>St. Jude Catholic Church</strong><br>
+      208 W. Jefferson Ave.<br>Fresno, CA 93706</p>
+    <div class="btns">
+      <a class="btn primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=St.+Jude+Catholic+Church+208+W.+Jefferson+Ave+Fresno+CA+93706">Ver mapa</a>
+      <a class="btn" href="#recepcion">Ver recepción</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="recepcion">
+  <div class="card reveal">
+    <div class="script kicker" style="font-size:44px">Después, a la recepción</div>
+    <p class="sub"><strong>13599 S. Raiden Ave.</strong><br>Caruthers, CA 93609</p>
+    <div class="schedule">
+      <div class="schedule-row"><div class="time">4:00–7:00</div><div><strong>Cena</strong></div></div>
+      <div class="schedule-row"><div class="time">6:00–7:00</div><div><strong>Programa de novios</strong></div></div>
+      <div class="schedule-row"><div class="time">7:00–11:00</div><div><strong>Baile</strong></div></div>
+    </div>
+    <div class="btns">
+      <a class="btn primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=13599+S.+Raiden+Ave+Caruthers+CA+93609">Ver mapa</a>
+      <a class="btn" href="#final">Continuar</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="final">
+  <div class="card reveal">
+    <div class="flowers"><div class="flower"></div><div class="rings">⚭</div></div>
+    <div class="script kicker">Maria &amp; Fernando</div>
+    <p class="sub">Gracias por ser parte de nuestra historia.</p>
+    <div class="divider"></div>
+    <p class="small">24 de Octubre de 2026</p>
+  </div>
+</section>
+
+<div class="footer">Invitación digital • Maria &amp; Fernando</div>
+
+<script>
+const wedding = new Date("2026-10-24T11:30:00-07:00").getTime();
+function tick(){
+  let d = wedding - Date.now();
+  if(d < 0) d = 0;
+  const day = Math.floor(d/86400000);
+  const hr = Math.floor((d%86400000)/3600000);
+  const mn = Math.floor((d%3600000)/60000);
+  const sc = Math.floor((d%60000)/1000);
+  document.getElementById("days").textContent = day;
+  document.getElementById("hours").textContent = hr;
+  document.getElementById("mins").textContent = mn;
+  document.getElementById("secs").textContent = sc;
+}
+tick(); setInterval(tick,1000);
+
+const io = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add("on"); });
+},{threshold:.18});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
